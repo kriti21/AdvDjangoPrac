@@ -1,0 +1,32 @@
+{% extends 'base.htm' %}
+  {% block content %}
+  <div>
+  <ul>
+    <li>Click <a href="{% url 'login' %}">here</a> to login as student.</li>
+    <li>Click <a href="{% url 'register_student' %}">here</a> to register as student.</li>
+  </ul>
+  </div>
+  <div>
+    <h4>Search</h4>
+    {% csrf_token %}
+    <input type="text" id="search" name="search"/>
+    <ul id="search-results">
+
+    </ul>
+  </div>
+  <div>
+    <h4>Language is: {{ language }}</h4>
+    <h4>Session language is: {{ session_language }}</h4>
+  </div>
+  <h3>Here is a list of registered students of Panjab University.</hr>
+    <div>
+    {% for student in students %}
+    <p>
+      <h3><a href="{%url 'student_detail' pk=student.pk %}">{{ student.name }}</a></h3>
+    </p>
+    <p>
+      {{ student.registration_no }}
+    </p>
+    {% endfor %}
+  </div>
+  {% endblock %}

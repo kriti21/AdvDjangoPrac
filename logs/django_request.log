@@ -1,0 +1,152 @@
+2017-04-02 01:45:49,054 [WARNING] django.request: Not Found: /
+2017-04-02 01:45:49,153 [WARNING] django.request: Not Found: /favicon.ico
+2017-04-02 01:45:57,351 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/static/uploaded_files/1490840807_48_1.jpeg
+2017-04-02 01:45:57,416 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/static/uploaded_files/1490840807_48_1.jpeg
+2017-04-02 01:46:01,128 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/static/uploaded_files/1490853174_7_bg.jpeg
+2017-04-02 01:46:01,203 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/static/uploaded_files/1490853174_7_bg.jpeg
+2017-04-02 01:46:23,720 [WARNING] django.request: Forbidden (CSRF token missing or incorrect.): /wifi/auth/
+2017-04-02 01:48:33,803 [WARNING] django.request: Forbidden (CSRF token missing or incorrect.): /wifi/auth/
+2017-04-02 01:54:29,423 [WARNING] django.request: Not Found: /
+2017-04-02 03:56:12,754 [WARNING] django.request: Not Found: /
+2017-04-02 03:56:35,806 [WARNING] django.request: Forbidden (CSRF token missing or incorrect.): /wifi/auth/
+2017-04-02 03:59:01,179 [WARNING] django.request: Not Found: /blog/article/3/
+2017-04-02 03:59:08,084 [WARNING] django.request: Not Found: /
+2017-04-02 03:59:25,109 [WARNING] django.request: Forbidden (CSRF token missing or incorrect.): /wifi/auth/
+2017-04-02 11:26:23,329 [WARNING] django.request: Not Found: /
+2017-04-02 11:26:36,618 [ERROR] django.request: Internal Server Error: /wifi/loggedin/
+Traceback (most recent call last):
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kriti/djangogirls2/wifiform/studentinfo/views.py", line 52, in loggedin
+    return render(request, 'loggedin.htm')
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+NoReverseMatch: Reverse for 'profile' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-04-02 11:28:05,609 [ERROR] django.request: Internal Server Error: /wifi/wifi_registration/
+Traceback (most recent call last):
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kriti/djangogirls2/wifiform/studentinfo/views.py", line 70, in wifi_registration
+    return render(request, 'formindex.htm', args)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 8: 'end', expected 'endblock'. Did you forget to register or load this tag?
+2017-04-02 11:29:14,060 [ERROR] django.request: Internal Server Error: /wifi/wifi_registration/
+Traceback (most recent call last):
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kriti/djangogirls2/wifiform/studentinfo/views.py", line 63, in wifi_registration
+    if form.is_valid():
+UnboundLocalError: local variable 'form' referenced before assignment
+2017-04-02 11:33:12,170 [ERROR] django.request: Internal Server Error: /wifi/thanks/
+Traceback (most recent call last):
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kriti/djangogirls2/wifiform/studentinfo/views.py", line 88, in thanks
+    return render(request, 'thanks.htm')
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/kriti/venv/local/lib/python2.7/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 5: 'end', expected 'endblock'. Did you forget to register or load this tag?
+2017-04-02 11:33:44,833 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/static/uploaded_files/1491132792_06_udyamilogo.png
+2017-04-02 11:33:44,923 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/static/uploaded_files/1491132792_06_udyamilogo.png
+2017-04-02 11:35:29,527 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/static/uploaded_files/1490840807_48_1.jpeg
+2017-04-02 11:35:29,607 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/static/uploaded_files/1490840807_48_1.jpeg
+2017-04-02 11:38:32,184 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/static/uploaded_files/1490840807_48_1.jpeg
+2017-04-03 03:08:44,958 [WARNING] django.request: Not Found: /
+2017-04-03 03:08:45,177 [WARNING] django.request: Not Found: /favicon.ico
+2017-04-03 03:08:51,346 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/static/uploaded_files/1490840807_48_1.jpeg
+2017-04-03 03:08:51,411 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/static/uploaded_files/1490840807_48_1.jpeg
+2017-04-03 03:10:20,049 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/static/uploaded_files/1491189009_46_Screenshot_from_2017-03-22_13-12-59.png
+2017-04-03 03:10:20,129 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/static/uploaded_files/1491189009_46_Screenshot_from_2017-03-22_13-12-59.png
+2017-04-03 03:11:43,169 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/media/uploaded_files/1491189009_46_Screenshot_from_2017-03-22_13-12-59.png
+2017-04-03 03:11:44,146 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/media/uploaded_files/1491189009_46_Screenshot_from_2017-03-22_13-12-59.png
+2017-04-03 10:54:45,558 [WARNING] django.request: Not Found: /
+2017-04-03 10:54:45,859 [WARNING] django.request: Not Found: /favicon.ico
+2017-04-03 10:55:39,628 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/media/uploaded_files/1490840807_48_1.jpeg
+2017-04-03 10:55:39,695 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/media/uploaded_files/1490840807_48_1.jpeg
+2017-04-03 10:58:36,902 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/media/uploaded_files/1491217076_36_Screenshot_from_2017-03-22_13-14-28.png
+2017-04-03 10:58:37,003 [WARNING] django.request: Not Found: /home/kriti/djangogirls2/wifiform/studentinfo/media/uploaded_files/1491217076_36_Screenshot_from_2017-03-22_13-14-28.png

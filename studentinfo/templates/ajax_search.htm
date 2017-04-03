@@ -1,0 +1,7 @@
+{% if students.count > 0 %}
+{% for student in students %}
+  <li><a href="student_detail/{{ student.id }}/">{{ student.name }}</a></li>
+{% endfor %}
+{% else %}
+ <li>None to show!</li>
+{% endif %}

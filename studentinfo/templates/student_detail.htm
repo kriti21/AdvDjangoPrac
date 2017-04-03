@@ -1,0 +1,17 @@
+{% extends 'base.htm' %}
+{% block content %}
+  {% if student.registration_no %}
+    {{ student.registration_no }}
+  {% endif %}
+  <h2>{{ student.name }}</h2>
+  <div style="float: center;">
+    {% if student.thumbnail %}
+    <p><img src="/home/kriti/djangogirls2/wifiform/studentinfo/media/{{ student.thumbnail }}" width="200"/></p>
+    {% endif %}
+  </div>
+  <p>Father's name = {{ student.father_name }}</p>
+  <p>Mother's name = {{ student.mother_name }}</p>
+  <p>Department = {{ student.dept }}</p>
+  <p>Branch = {{ student.branch }}</p>
+  <p>Semester = {{ student.semester }}</p>
+{% endblock %}

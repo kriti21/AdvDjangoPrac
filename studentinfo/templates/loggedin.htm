@@ -1,0 +1,10 @@
+{% extends 'base.htm' %}
+{% block content %}
+<h2>You are successfully logged in as a student of Panjab University!</h2>
+<br>
+<p>You may now proceed to get your wifi username and password by clicking the following link.<p>
+<br>
+<a href="{% url 'wifi_registration' %}">Click here</a>
+<br>
+<p>Click <a href="{% url 'logout' %}">here</a> to logout.</p>
+{% endblock %}
